@@ -1,0 +1,307 @@
+{% extends "welcome/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- BANNER -->
+<div class="banner-wrapper text-center">
+
+    <div class="row">
+        <div class="col-md-6 col-7 bg">
+            <div class="diamond">
+            </div>
+        </div>
+        <div class="col-md-6 col-5"></div>
+    </div>
+
+
+    <div class="content-wrapper">
+        <span class="arrow"><i class="fas fa-arrow-down"></i></span>
+
+        <div class="content" data-aos="fade-up">
+            <div class="heading">
+                <p class="para hey">HEY! I AM</p>
+                <h1>Shubha Pradhan</h1>
+                <p class="what">I'm a
+                    <span class="typed-text para"></span>
+                    <span class="cursor text-dark">
+                        <i class="fas fa-grip-lines-vertical"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- END BANNER -->
+
+<!-- SCROLL TOP BUTTON -->
+<div class="topbutton">
+    <a href="#home" class="topbtn"><i class="fas fa-angle-up"></i></a>
+</div>
+<!-- END SCROLL TOP BUTTON -->
+<!-- ABOUT -->
+
+
+<div class="aboutme" id="about">
+    <div class="row px-0 mx-0">
+        <div class="col-md-6 image r-0" data-aos="fade-right">
+            <img src="{% static 'welcome/images/shubha.png' %}" alt="">
+        </div>
+        <div class="col-md-6 pr-0 mx-0" data-aos="fade-left">
+            <div class="info">
+                <p class="para">ABOUT ME</p>
+                <h4>A FrontEnd Developer Based in Nepal</h4>
+
+                <p class="short-info">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia, there live the blind texts.</p>
+
+                <div class="tabular">
+                    <div class="labels">
+                        <li>
+                            <span class="label">Name:</span>
+                            <span class="text">Shubha Pradhan</span>
+                        </li>
+                        <li>
+                            <span class="label">Date of birth:</span>
+                            <span class="text">August 07, 2002</span>
+                        </li>
+                        <li>
+                            <span class="label">Address:</span>
+                            <span class="text">Budanilkantha, Kathmandu</span>
+                        </li>
+                        <li>
+                            <span class="label">Email:</span>
+                            <span class="text">shubhadon7@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="label">Phone:</span>
+                            <span class="text">+977 9862259363</span>
+                        </li>
+                    </div>
+                </div>
+                <p class="comp-pro" id="counterinfo"><span class="num" id="projectNo">12</span> Project complete</p>
+
+                <a href="{% url 'resume' %}"><button class="button">DOWNLOAD
+                        CV</button></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- END ABOUT -->
+
+<!-- RESUME -->
+<div class="resume" id="resume">
+    <div class="row mx-0">
+        <div class="col-md-3 col-12 sidebar" data-aos="fade-right">
+            <div class="sidenavigation sticky-top">
+                <li class="navs">
+                    <div class="line"></div>
+                    <a href="#education" class="education navi">Education</a>
+                </li>
+                <li class="navs">
+                    <div class="line"></div>
+                    <a href="#experience" class="experience navi">Experience</a>
+                </li>
+                <li class="navs">
+                    <div class="line"></div>
+                    <a href="#skills" class="skills navi">Skills</a>
+                </li>
+            </div>
+        </div>
+        <div class="col-md-9 col-12">
+            <div id="education" class="main education">
+                <h3>Education</h3>
+                <div class="wrapper" data-aos="fade-up">
+                    <div class="image">
+                        <img src="{% static 'welcome/images/education.png' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="content">
+                        <p class="date">2014-2016</p>
+                        <p class="degree">CBSE</p>
+                        <p class="institute">Modern Indian School</p>
+                        <p class="short-info">A small river named Duden flows by their place and supplies it.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="wrapper" data-aos="fade-up">
+                    <div class="image">
+                        <img src="{% static 'welcome/images/education.png' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="content">
+                        <p class="date">2016-2019</p>
+                        <p class="degree">NEB (Science Faculty)</p>
+                        <p class="institute">The Times International College</p>
+                        <p class="short-info">A small river named Duden flows by their place and supplies it
+                            .</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="wrapper" data-aos="fade-up">
+                    <div class="image">
+                        <img src="{% static 'welcome/images/education.png' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="content">
+                        <p class="date">2019-2024</p>
+                        <p class="degree">B.Sc. Computer Science and Information Technology </p>
+                        <p class="institute">Trinity International College</p>
+                        <p class="short-info">A small river named Duden flows by their place and supplies it
+                            .</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div id="experience" class="main experience">
+                <h3>Experience</h3>
+                <div class="wrapper" data-aos="fade-up">
+                    <div class="image">
+                        <img src="{% static 'welcome/images/experience.png' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="content">
+                        <p class="date">2020-Present</p>
+                        <p class="degree">FrontEnd Developer, Web Designer</p>
+                        <p class="institute">101Infotech</p>
+                        <p class="short-info">A small river named Duden flows by their place and supplies it
+                            .</p>
+                    </div>
+                </div>
+                <hr>
+
+            </div>
+            <div id="skills" class="main skills">
+                <h3>Skills</h3>
+                <div class="image-container" data-aos="fade-up">
+                    <img src="{% static 'welcome/images/skills1.png' %}" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- END RESUME -->
+
+
+<!-- PROJECTS -->
+<div id="project" class="projects-group">
+
+    <div class="pro-wrapper">
+        <div class="headings" data-aos="fade-up">
+            <p>PORTFOLIOS</p>
+            <h1>Some of my awesome stuffs here</h1>
+        </div>
+
+
+
+        <div class="projects">
+            <div class="row mx-0 px-0">
+                <div class="col-lg-4 col-sm-6 col-12 project h-100">
+                    <a href="#/">
+                        <div class="content">
+                            <div class="image-container">
+                                <img src="{% static 'welcome/images/samarpitstore.png' %}" alt="" class="img-fluid"
+                                    data-aos="fade-right">
+                            </div>
+                            <div class="image-overlay">
+                                <div class="desc">
+                                    <h3>Samarpit Store</h3>
+                                    <p>My first project while learning django for managing the retail store's sales.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 project h-100">
+                    <a href="https://yourtutor.101infotechnp.com/teacher/login">
+                        <div class="content">
+                            <div class="image-container">
+                                <img src="{% static 'welcome/images/yourtutor.png' %}" alt="" class="img-fluid"
+                                    data-aos="fade-up">
+                            </div>
+                            <div class="image-overlay">
+                                <div class="desc">
+                                    <h3>Your Tutor</h3>
+                                    <div>A sweet project for searching tutors and students.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 project h-100">
+                    <a href="#/">
+                        <div class="content">
+                            <div class="image-container">
+                                <img src="{% static 'welcome/images/ecommerce.png' %}" alt="" class="img-fluid"
+                                    data-aos="fade-left">
+                            </div>
+                            <div class="image-overlay">
+                                <div class="desc">
+                                    <h3>Shion House</h3>
+                                    <p>A project for an ecommerce site.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 project h-100">
+                    <a href="#/">
+                        <div class="content">
+                            <div class="image-container">
+                                <img src="{% static 'welcome/images/HostelManagementSystem.png' %}" alt=""
+                                    class="img-fluid" data-aos="fade-right">
+                            </div>
+                            <div class="image-overlay">
+                                <div class="desc">
+                                    <h3>Hostel Finder</h3>
+                                    <div>A project for finding the ideal hostel for your stay.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 project h-100">
+                    <a href="https://101infotechnp.com/">
+                        <div class="content">
+                            <div class="image-container">
+                                <img src="{% static 'welcome/images/101Infotech.png' %}" alt="" class="img-fluid"
+                                    data-aos="fade-up">
+                            </div>
+                            <div class="image-overlay">
+                                <div class="desc">
+                                    <h3>101Infotech</h3>
+                                    <p>A website for the company I work in.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 project h-100">
+                    <a href="#/">
+                        <div class="content">
+                            <div class="image-container">
+                                <img src="{% static 'welcome/images/restaurant.png' %}" alt="" class="img-fluid"
+                                    data-aos="fade-left">
+                            </div>
+                            <div class="image-overlay">
+                                <div class="desc">
+                                    <h3>Trisara</h3>
+                                    <div>A project for a restaurant based on Australia.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- END PROJECTS -->
+
+{% endblock content %}
