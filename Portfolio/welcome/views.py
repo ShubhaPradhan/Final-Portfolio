@@ -7,7 +7,7 @@ from django.http import FileResponse
 
 
 def home(request) :
-    return render(request, 'welcome/index.html')
+    return render(request, 'welcome/welcome.html')
 
 
 def download(request):
